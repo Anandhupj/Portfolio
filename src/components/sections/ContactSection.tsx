@@ -10,17 +10,35 @@ const ContactSection = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Create mailto link
-    const subject = encodeURIComponent(formData.subject || 'Portfolio Contact');
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    );
-    
-    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=anandhujayapal4744@gmail.com?subject=${subject}&body=${body}`;
-  };
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("https://formspree.io/f/xqalgane", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    console.error("Form submission error:", error);
+    alert("Failed to send message. Try again later.");
+  }
+};
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -80,7 +98,7 @@ const ContactSection = () => {
           >
             <h3 className="text-2xl font-bold text-foreground mb-6">Send a Message</h3>
             
-            <form action="https://formspree.io/f/xqalgane" method="POST" className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
              {/* Hidden field to prevent spam */}
              <input type="text" name="_gotcha" style={{ display: "none" }} />
               <div className="grid sm:grid-cols-2 gap-4">
@@ -99,6 +117,8 @@ const ContactSection = () => {
                     id="name"
                     name="name"
                     required
+                     value={formData.name}
+                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl bg-muted border border-border focus:border-accent focus:outline-none transition-colors"
                     placeholder="Your name"
                   />
@@ -119,6 +139,8 @@ const ContactSection = () => {
                     id="email"
                     name="email"         
                     required
+                     value={formData.email}
+                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl bg-muted border border-border focus:border-accent focus:outline-none transition-colors"
                     placeholder="your@email.com"
                   />
@@ -139,6 +161,8 @@ const ContactSection = () => {
                   type="text"
                   id="subject"
                   name="subject"
+                   value={formData.subject}
+                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-xl bg-muted border border-border focus:border-accent focus:outline-none transition-colors"
                   placeholder="Project inquiry"
                 />
@@ -159,12 +183,14 @@ const ContactSection = () => {
                   name="message"
                   required
                   rows={6}
+                   value={formData.message}
+                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-xl bg-muted border border-border focus:border-accent focus:outline-none transition-colors resize-none"
                   placeholder="Tell me about your project..."
                 />
               </motion.div>
 
-              <motion.button
+              <motion.button onClick={handleSubmit}
                 type="submit"
                 className="w-full gradient-btn px-8 py-4 text-white font-semibold rounded-2xl flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.02 }}
@@ -174,7 +200,7 @@ const ContactSection = () => {
                 transition={{ delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <Send className="w-5 h-5" />
+                <Send  className="w-5 h-5" />
                 Send Message
               </motion.button>
             </form>

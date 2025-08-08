@@ -16,7 +16,7 @@ const ProjectsSection = () => {
       image: project1,
       technologies: ["React.js", "JavaScript", "OpenWeatherMap API", "Tailwind CSS"],
       githubUrl: "https://github.com/Anandhupj/Weather-app",
-      liveUrl: "https://gemini-ai-clone-blond.vercel.app/",
+      liveUrl: "https://weather-app-ten-neon-79.vercel.app/",
       category: "Web Application"
     },
     {
