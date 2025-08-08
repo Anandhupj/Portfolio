@@ -7,36 +7,36 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Product Manager",
-      company: "Tech Innovations Inc.",
-      content: "Alex's attention to detail and technical expertise is exceptional. He consistently delivers high-quality code and brings innovative solutions to complex problems. Working with him has been a pleasure.",
+      name: "Aadi Prakash",
+      role: "Frontend Developer",
+      company: "ZedeXeL.",
+      content: "Collaborating with Anandhu on React projects has always been seamless. He’s the kind of full stack developer who understands the nuances of frontend performance, component structuring, and state management. His clean code and attention to detail made integration effortless.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b417?w=150&h=150&fit=crop&crop=face"
     },
     {
-      name: "Michael Chen",
-      role: "CTO",
-      company: "Digital Solutions Ltd.",
-      content: "One of the most skilled developers I've worked with. Alex has the ability to understand complex requirements and translate them into elegant, maintainable code. His leadership skills are outstanding.",
+      name: "Anat Alphones",
+      role: "Python/Django Developer ",
+      company: "Ekaksha Technologies.",
+      content: "Working alongside Ananda on an API-heavy project was a great experience. His ability to structure the frontend to work efficiently with RESTful endpoints, and his Node/Express knowledge, added a lot of value to the project. He’s proactive, skilled, and always willing to learn.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658f4ff4e?w=150&h=150&fit=crop&crop=face"
     },
     {
-      name: "Emily Rodriguez",
-      role: "Design Lead",
-      company: "Creative Studio",
-      content: "Alex bridges the gap between design and development beautifully. He understands the importance of user experience and always implements designs with pixel-perfect precision and smooth animations.",
+      name: "Varsha",
+      role: "UI/UX Designer",
+      company: "Ekaksha Technologies",
+      content: "Anandhu transforms designs into pixel-perfect, responsive interfaces with ease. His use of Tailwind CSS and understanding of user flow brought my prototypes to life exactly as envisioned. He always respects design consistency while offering smart suggestions to enhance usability.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-143876681033-6461ffd8d80?w=150&h=150&fit=crop&crop=face"
     },
     {
-      name: "David Park",
-      role: "Startup Founder",
-      company: "StartupXYZ",
-      content: "Alex was instrumental in bringing our MVP to life. His full-stack expertise and ability to work under tight deadlines while maintaining code quality is remarkable. Highly recommended!",
+      name: "Swathi",
+      role: "Web Developer",
+      company: "Ekaksha Technologies",
+      content: "I’ve collaborated with Anandhu on full-cycle web projects and have seen firsthand how well he balances frontend finesse with backend robustness. Whether it's building with React, styling with Tailwind, or deploying a Node app, he always delivers high-quality, scalable solutions.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-150700321169-0a1d7228f2?w=150&h=150&fit=crop&crop=face"
     }
   ];
 

@@ -4,7 +4,11 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Scene3D from '@/components/3D/Scene3D';
-import heroImage from '@/assets/hero-portrait.jpg';
+// import heroImage from '@/assets/hero-anandhu-portfolio-img.jpg';
+import heroImageLight from '@/assets/heropic-portrait-removebg-preview.png';
+import heroImageDark from '@/assets/hero-anandhu-portfolio-img.jpg';
+import { useTheme } from '@/contexts/ThemeContext';
+
 
 const HeroSection = () => {
   useEffect(() => {
@@ -14,6 +18,8 @@ const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const { theme } = useTheme();
 
   return (
     <section className="relative min-h-screen flex items-center justify-center section-bg overflow-hidden">
@@ -51,7 +57,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
-                Alex Johnson
+                Ananda Narayanan P J
               </motion.h1>
               
               <motion.h2
@@ -60,7 +66,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
-                Full-Stack Developer & UI/UX Designer
+                Full-Stack Developer
               </motion.h2>
             </motion.div>
 
@@ -89,14 +95,15 @@ const HeroSection = () => {
                 Let's Connect
               </motion.button>
               
-              <motion.button
+              <motion.a
+                href='/Ananda-Narayanan-PJ-[Resume]_---.pdf'
                 className="glass px-8 py-4 text-foreground font-semibold rounded-2xl flex items-center gap-3 justify-center hover:bg-white/20 transition-all"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Download className="w-5 h-5" />
                 Download Resume
-              </motion.button>
+              </motion.a>
             </motion.div>
           </motion.div>
 
@@ -110,11 +117,12 @@ const HeroSection = () => {
             transition={{ duration: 1, delay: 0.4 }}
           >
             <div className="relative w-80 h-80 mx-auto">
-              <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-30 animate-pulse-glow"></div>
+              <div className="absolute inset-0 bg-gradient-primary blur-3xl opacity-30 animate-pulse-glow" ></div>
               <img
-                src={heroImage}
-                alt="Alex Johnson"
-                className="relative z-10 w-full h-full object-cover rounded-full glass float-animation"
+                src={theme === 'dark' ? heroImageDark : heroImageLight}
+                 alt="Ananda Narayanan P J"
+                className="relative z-10 w-full h-full object-cover glass float-animation"
+                // loading="lazy"
               />
             </div>
           </motion.div>

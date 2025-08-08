@@ -15,23 +15,25 @@ const FloatingCube = () => {
     }
   });
 
-  const color = theme === 'dark' ? '#a855f7' : '#8b5cf6';
+  const color = theme === 'dark' ? '#22d3ee' : '#0ea5e9'; // cyan/light blue
 
   return (
-    <mesh ref={meshRef} scale={1.5}>
+    <mesh ref={meshRef} scale={1.5} >
       <boxGeometry args={[1, 1, 1]} />
+      <ambientLight intensity={0.8} />
+<pointLight position={[0, 1, 1]} intensity={2} />
+
       <meshStandardMaterial
         color={color}
-        metalness={0.7}
-        roughness={0.2}
-        transparent
-        opacity={0.8}
+        metalness={0.6}
+        roughness={0.1}
+       
+        opacity={1}
       />
       <mesh scale={1.01}>
         <boxGeometry args={[1, 1, 1]} />
         <meshBasicMaterial
           color={color}
-          transparent
           opacity={0.1}
           wireframe
         />

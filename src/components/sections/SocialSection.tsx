@@ -6,25 +6,25 @@ const SocialSection = () => {
     {
       name: 'GitHub',
       icon: <Github className="w-6 h-6" />,
-      url: 'https://github.com',
+      url: 'https://github.com/Anandhupj',
       color: 'hover:text-white hover:bg-gray-800'
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin className="w-6 h-6" />,
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/ananda-narayanan-pj/',
       color: 'hover:text-white hover:bg-blue-600'
     },
     {
       name: 'Email',
       icon: <Mail className="w-6 h-6" />,
-      url: 'mailto:alex.johnson@example.com',
+      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=anandhujayapal4744@gmail.com',
       color: 'hover:text-white hover:bg-red-500'
     },
     {
       name: 'WhatsApp',
       icon: <MessageCircle className="w-6 h-6" />,
-      url: 'https://wa.me/15551234567',
+      url: 'https://wa.me/919656197566',
       color: 'hover:text-white hover:bg-green-500'
     }
   ];
@@ -122,7 +122,7 @@ const SocialSection = () => {
               viewport={{ once: true }}
             >
               <p className="text-muted-foreground text-sm">
-                © 2024 Alex Johnson. All rights reserved.
+                © 2025 Ananda Narayanan P J. All rights reserved.
               </p>
               
               <div className="flex items-center gap-6 text-sm">

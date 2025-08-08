@@ -51,13 +51,13 @@ const ParticlesBackground = () => {
         },
         particles: {
           color: {
-            value: theme === 'dark' ? ["#a855f7", "#3b82f6", "#06b6d4"] : ["#8b5cf6", "#3b82f6", "#0891b2"],
+            value: theme === 'dark' ? ["#a855f7", "#38bdf8", "#22d3ee"] : ["#8b5cf6", "#3b82f6", "#0891b2"],
           },
           links: {
-            color: theme === 'dark' ? "#a855f7" : "#8b5cf6",
+             color: theme === 'dark' ? "#a855f7" : "#8b5cf6",
             distance: 150,
             enable: true,
-            opacity: 0.2,
+            opacity: 0.4,
             width: 1,
           },
           move: {
@@ -78,7 +78,7 @@ const ParticlesBackground = () => {
             value: 80,
           },
           opacity: {
-            value: 0.3,
+            value: 0.6,
           },
           shape: {
             type: "circle",

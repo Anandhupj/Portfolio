@@ -4,57 +4,62 @@ import { Calendar, MapPin, Building } from 'lucide-react';
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Senior Full-Stack Developer",
-      company: "Tech Innovations Inc.",
-      location: "San Francisco, CA",
-      period: "2024 - Present",
-      description: [
-        "Led development of microservices architecture serving 100K+ users",
-        "Mentored junior developers and established best practices",
-        "Improved application performance by 40% through optimization",
-        "Collaborated with design team to implement new UI/UX standards"
-      ],
-      technologies: ["React", "Node.js", "AWS", "Docker", "PostgreSQL"]
-    },
-    {
-      title: "Frontend Lead Developer",
-      company: "Digital Solutions Ltd.",
-      location: "New York, NY",
-      period: "2022 - 2024",
-      description: [
-        "Spearheaded frontend development for 5+ client projects",
-        "Implemented responsive design system used across multiple products",
-        "Reduced development time by 30% through component reusability",
-        "Coordinated with cross-functional teams for seamless delivery"
-      ],
-      technologies: ["Vue.js", "TypeScript", "Tailwind CSS", "Figma", "Git"]
-    },
-    {
       title: "Full-Stack Developer",
-      company: "StartupXYZ",
-      location: "Remote",
-      period: "2020 - 2022",
+      company: " Ekaksha Technologies.",
+      location: "Palakkad, Kerala",
+      period: "04/2025 - Present",
       description: [
-        "Built MVP from concept to launch in 6 months",
-        "Developed RESTful APIs and integrated third-party services",
-        "Implemented automated testing reducing bugs by 50%",
-        "Participated in agile development and sprint planning"
+        "Designed fully responsive websites and web applications using HTML, CSS, JavaScript, and React",
+        "Designed interactive UI components using Bootstrap and Tailwind CSS to improve user experience",
+        "Provided ongoing maintenance and support for client websites",
+        "Created responsive websites for small to medium businesses",
+        "Coordinated with cross-functional teams for seamless delivery",
+        "Redesigned an outdated website using React, improving UI/UX and increasing performance by 40% through optimized rendering and efficient state management.",
+        "Collaborated with designers to convert Figma and Adobe XD designs into pixel-perfect web pages.",
+        "Optimized websites for SEO and performance"
       ],
-      technologies: ["React", "Express.js", "MongoDB", "Jest", "Heroku"]
+      technologies: ["React", "Node.js", "firebase", "Tailwind CSS", "Figma","Express.js", "Mongodb"]
     },
     {
-      title: "Junior Web Developer",
-      company: "WebCorp Agency",
-      location: "Austin, TX",
-      period: "2019 - 2020",
+      title: "Mern Stack Developer Intern",
+      company: " Softroniics.",
+      location: "Palakkad, Kerala",
+      period: "05/2024 - 01/2025",
       description: [
-        "Created responsive websites for small to medium businesses",
-        "Collaborated with designers to implement pixel-perfect layouts",
-        "Optimized websites for SEO and performance",
-        "Provided ongoing maintenance and support for client websites"
+        "Developed web applications using Mern stack",
+        "Demonstrated proficiency in Mern Stack Development and continuously updated skills to stay abreast of industry trends and best practices.",
+        "Exposure: HTML, CSS, MongoDB, JavaScript, React.js, Node.js, Bootsrap, Tailwind CSS, Express.js",
+        "Built MVP from concept to launch in 6 months",
+        "Developed RESTful APIs and integrated third-party services"
       ],
-      technologies: ["HTML/CSS", "JavaScript", "WordPress", "PHP", "MySQL"]
+      technologies: ["React.js", "JavaScript", "Tailwind CSS", "MongoDB","HTML", "CSS", "Node.js", "MySQL", "Bootsrap", "Node.js", "GitHub", "Express.js"]
     }
+    // 
+    //   title: "Full-Stack Developer",
+    //   company: "StartupXYZ",
+    //   location: "Remote",
+    //   period: "2020 - 2022",
+    //   description: [
+    //     "Built MVP from concept to launch in 6 months",
+    //     "Developed RESTful APIs and integrated third-party services",
+    //     "Implemented automated testing reducing bugs by 50%",
+    //     "Participated in agile development and sprint planning"
+    //   ],
+    //   technologies: ["React", "Express.js", "MongoDB", "Jest", "Heroku"]
+    // },
+    // {
+    //   title: "Junior Web Developer",
+    //   company: "WebCorp Agency",
+    //   location: "Austin, TX",
+    //   period: "2019 - 2020",
+    //   description: [
+    //     "Created responsive websites for small to medium businesses",
+    //     "Collaborated with designers to implement pixel-perfect layouts",
+    //     "Optimized websites for SEO and performance",
+    //     "Provided ongoing maintenance and support for client websites"
+    //   ],
+    //   technologies: ["HTML/CSS", "JavaScript", "WordPress", "PHP", "MySQL"]
+    // }
   ];
 
   return (

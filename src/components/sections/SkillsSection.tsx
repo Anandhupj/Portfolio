@@ -16,10 +16,12 @@ const SkillsSection = () => {
       title: "Frontend",
       icon: <Globe className="w-8 h-8" />,
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Next.js", level: 88 },
-        { name: "Tailwind CSS", level: 92 }
+        { name: "React", level: 80 },
+        { name: "TypeScript", level: 60 },
+        { name: "JavaScript", level: 88 },
+        { name: "jQuery", level: 75 },
+        { name: "BootStrap", level: 78 },
+        { name: "Tailwind CSS", level: 72 }
       ],
       color: "from-blue-500 to-cyan-500"
     },
@@ -27,10 +29,10 @@ const SkillsSection = () => {
       title: "Backend",
       icon: <Database className="w-8 h-8" />,
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "PostgreSQL", level: 88 },
-        { name: "GraphQL", level: 82 }
+        { name: "Node.js", level: 75 },
+        { name: "Express", level: 70 },
+        { name: "MySQL", level: 55 },
+        { name: "MongoDB", level: 65 }
       ],
       color: "from-green-500 to-emerald-500"
     },
@@ -38,21 +40,24 @@ const SkillsSection = () => {
       title: "Design",
       icon: <Palette className="w-8 h-8" />,
       skills: [
-        { name: "Figma", level: 90 },
-        { name: "Adobe XD", level: 85 },
-        { name: "Framer", level: 78 },
-        { name: "Blender", level: 70 }
+        { name: "Figma", level: 70 },
+        { name: "Adobe", level: 55 },
+        { name: "Canva", level: 78 }
       ],
       color: "from-purple-500 to-pink-500"
     },
     {
-      title: "Tools",
+      title: "Tools & Others",
       icon: <Zap className="w-8 h-8" />,
       skills: [
-        { name: "Git", level: 95 },
-        { name: "Docker", level: 85 },
-        { name: "AWS", level: 80 },
-        { name: "Webpack", level: 82 }
+        { name: "GitHub", level: 90 },
+        { name: "Git", level: 80 },
+        { name: "Firebase", level: 60 },
+        { name: "C", level: 50 },
+         { name: "Vercel", level: 82 },
+          { name: "Render", level: 74 },
+        { name: "Hostinger", level: 76 },
+         { name: "Webpack", level: 82 }
       ],
       color: "from-orange-500 to-red-500"
     }
@@ -161,9 +166,9 @@ const SkillsSection = () => {
           
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'React', 'Vue.js', 'Angular', 'Node.js', 'Python', 'TypeScript',
-              'MongoDB', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes', 'AWS',
-              'GraphQL', 'REST APIs', 'Microservices', 'Serverless'
+              'React', 'JavaScript', 'Tailwind CSS', 'Node.js', 'jQuery', 'TypeScript',
+              'MongoDB', 'MySQL', 'BootStrap', 'Firebase', 'Git', 'GitHub',
+              'Express.js', 'Figma', 'REST APIs'
             ].map((tech, index) => (
               <motion.div
                 key={index}

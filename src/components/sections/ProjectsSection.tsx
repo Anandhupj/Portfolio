@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import { useState } from 'react';
-import project1 from '@/assets/project-1.jpg';
-import project2 from '@/assets/project-2.jpg';
-import project3 from '@/assets/project-3.jpg';
+import project1 from '@/assets/weather-app-project.png';
+import project2 from '@/assets/e-commerce-project.png';
+import project3 from '@/assets/gemini-ai-clone-project.png';
 
 const ProjectsSection = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
@@ -11,33 +11,33 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "SaaS Dashboard Platform",
-      description: "A comprehensive analytics dashboard with real-time data visualization, built with React, TypeScript, and D3.js. Features include custom charts, user management, and responsive design.",
+      title: " Real-Time Weather-App",
+      description: "A sleek and responsive weather application built using React.js, Tailwind CSS, and the OpenWeather API. Users can search by city or country to view real-time weather data with dynamic visuals and a modern glassmorphism UI. Features include temperature display, weather conditions, and adaptive background based on weather type.",
       image: project1,
-      technologies: ["React", "TypeScript", "D3.js", "Node.js", "PostgreSQL"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      technologies: ["React.js", "JavaScript", "OpenWeatherMap API", "Tailwind CSS"],
+      githubUrl: "https://github.com/Anandhupj/Weather-app",
+      liveUrl: "https://gemini-ai-clone-blond.vercel.app/",
       category: "Web Application"
     },
     {
       id: 2,
-      title: "E-Commerce Mobile App",
-      description: "Modern mobile shopping experience with seamless checkout, wishlist functionality, and personalized recommendations. Built using React Native and integrated with Stripe payments.",
+      title: " Sports & Fitness E-Commerce App",
+      description: "This is a full-featured full-stack e-commerce platform built with the MERN stack, styled using Tailwind CSS, and powered by Redux Toolkit for efficient state management. Designed to offer a smooth shopping experience for sports and fitness enthusiasts. Users can easily browse, search, and filter products by name or price, The app includes secure login and authentication, image uploads with Cloudinary, and payment options using Stripe and Razorpay. Real-time feedback is handled with React Toastify, and the entire UI is fully responsive across devices.It also comes with a powerful admin dashboard that allows easy management of products, orders, and users through full CRUD operations.",
       image: project2,
-      technologies: ["React Native", "Redux", "Stripe", "Firebase", "MongoDB"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      category: "Mobile App"
+      technologies: ["React.js", "Redux", "Stripe", "Razorpay","Tailwind CSS", "Node.js", "Experss.js", "MongoDB"],
+      githubUrl: "https://github.com/Anandhupj/E-Commerce-app",
+      liveUrl: "https://sports-and-fitness-collection.vercel.app/",
+      category: "Web Application"
     },
     {
       id: 3,
-      title: "AI-Powered Analytics",
-      description: "Machine learning platform for predictive analytics with interactive dashboards. Features automated insights, custom ML models, and real-time data processing.",
+      title: "Gemini AI Clone",
+      description: "A modern and interactive AI assistant web app inspired by Google’s Gemini. Built with React.js and styled using Tailwind CSS, this project lets users ask questions or give prompts and get smart, real-time responses using Google’s Generative AI API.It features a clean, intuitive interface and securely handles API keys with dotenv. Designed to feel simple, responsive, and helpful—just like a real AI assistant.",
       image: project3,
-      technologies: ["Python", "TensorFlow", "FastAPI", "React", "Redis"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      category: "AI/ML Platform"
+      technologies: ["React.js", "Tailwind CSS", "Google’s Generative AI API"],
+      githubUrl: "https://github.com/Anandhupj/gemini-ai-clone",
+      liveUrl: "https://gemini-ai-clone-blond.vercel.app/",
+      category: "AI assistant Platform"
     }
   ];
 
@@ -126,7 +126,7 @@ const ProjectsSection = () => {
 
                   {/* Category Badge */}
                   <div className="absolute top-4 left-4">
-                    <span className="glass px-3 py-1 text-xs font-medium text-accent rounded-full">
+                    <span className=" px-3 py-1 text-xs font-medium text-accent rounded-full bg-accent text-accent-foreground">
                       {project.category}
                     </span>
                   </div>

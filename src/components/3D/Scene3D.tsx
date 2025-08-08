@@ -22,6 +22,7 @@ const Scene3D: React.FC<Scene3DProps> = ({ children, enableControls = false }) =
         {children || <FloatingCube />}
       </Suspense>
       
+      
       {enableControls && (
         <OrbitControls
           enableZoom={false}

@@ -59,10 +59,17 @@ const AboutSection = () => {
                 Passionate Developer & Designer
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                With over 5 years of experience in web development, I specialize in creating 
+                With over 1 years of experience in web development, I specialize in creating 
                 exceptional digital experiences that combine cutting-edge technology with 
                 thoughtful design.
               </p>
+               <p className="text-muted-foreground leading-relaxed mb-4">
+                 Passionate and results-oriented FULL STACK DEVELOPER with expertise in modern web
+ technologies, including HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React.js, Node.js and
+ Express.js. Dedicated to crafting responsive, high-performance web applications that enhance user
+ experience and business growth. Skilled in problem-solving, quick adaptation, collaboration abilities
+ and a continous learning mindset. Eager to apply and develop these skills in professional setting.
+               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 My journey started with a curiosity about how things work behind the scenes, 
                 which led me to explore everything from pixel-perfect designs to complex 
@@ -70,8 +77,9 @@ const AboutSection = () => {
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 When I'm not coding, you'll find me exploring new technologies, contributing 
-                to open-source projects, or mentoring aspiring developers.
+                to open-source projects
               </p>
+              
             </motion.div>
           </motion.div>
 
@@ -125,10 +133,10 @@ const AboutSection = () => {
             
             {/* Timeline items */}
             {[
-              { year: "2024", title: "Senior Full-Stack Developer", company: "Tech Innovations Inc." },
-              { year: "2022", title: "Frontend Lead", company: "Digital Solutions Ltd." },
-              { year: "2020", title: "Full-Stack Developer", company: "StartupXYZ" },
-              { year: "2019", title: "Junior Developer", company: "WebCorp" }
+              { year: "2025", title: "Full-Stack Developer", company: " Ekaksha Technologies." },
+              { year: "2024", title: "Mern Stack Developer Intern", company: "Softroniics." },
+              { year: "2021-24", title: "B.Sc. Electronics", company: "IHRD Kottayi (University of Calicut)-Palakkad, Kerala, India" },
+              { year: "2019-21", title: "Biology Science", company: "Plus Two (CA Kuzhalmannam-Palakkad, Kerala, India)" }
             ].map((item, index) => (
               <motion.div
                 key={index}
