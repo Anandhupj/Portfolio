@@ -96,7 +96,7 @@ const HeroSection = () => {
               </motion.button>
               
               <motion.a
-                href='/Ananda-narayanan-P-J-resume-.pdf'
+                href='/Ananda_Narayanan_P_J-[resume]_.pdf'
                 className="glass px-8 py-4 text-foreground font-semibold rounded-2xl flex items-center gap-3 justify-center hover:bg-white/20 transition-all"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
